@@ -12,27 +12,47 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* 根据需要调整高度 */
+            height: 80vh; /* 轮播框高度设置为视口高度 */
+			background-color: rgba(204, 204, 204, 0.15); 
         }
         .carousel-item img {
-             max-width: 100%;
-            max-height: 100%;
+            width: 25%; /* 图片宽度设置为屏幕宽度的一半 */
+            height: 100%; /* 保持图片高度自动适应比例 */
             object-fit: contain; /* 保持图片比例并适应容器 */
-=======
-            height: 50px;
+          
         }
-        .carousel-item img {
-            width: 100%;
-	    height: 100%;
-            object-fit: cover;
->>>>>>> 817a2d668a368537889e4efc3ad9b6bfcd51e93f
+		.carousel-control-prev-icon,
+        .carousel-control-next-icon {
+		background-color: rgba(204, 204, 204, 0.75); /* 按钮背景颜色为亮橙色 */
+		border-radius: 50%; /* 按钮圆形 */
+		width: 50px;
+		height: 50px;
+		filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3)); /* 添加阴影效果 */
+		}
+
+	.carousel-control-prev-icon:hover,
+	.carousel-control-next-icon:hover {
+		background-color: #c70039; /* 鼠标悬停时变为深红色 */
+	}
+	.intro-text {
+            padding: 20px;
+            text-align: center; /* 文字居中显示 */
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
         }
+
     </style>
 </head>
 <body>
 
-<h1>这里是彭树禹的主页</h1>
-<p>这个主页将被使用 并陆续更新旅行记忆</p>
+<h1 style="text-align: center;">
+    XIAOYUAN的主页
+</h1>
+<p style="text-align: center;">
+    这个主页将被使用 并陆续更新旅行记忆
+</p>
+
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -84,7 +104,12 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-
+<div class="intro-text">
+    <p>新疆，位于中国西北部，是一个美丽而神秘的地方。</p>
+    <p>这里有广袤的草原、巍峨的山脉和辽阔的沙漠。</p>
+    <p>天山、喀纳斯湖、塔克拉玛干沙漠等景点，展示了大自然的壮丽。</p>
+    <p>新疆的风景如诗如画，每一处都让人流连忘返。</p>
+</div>
 <!-- 引入Bootstrap和jQuery JavaScript -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
